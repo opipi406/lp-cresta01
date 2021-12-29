@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webポートフォリオ初級編</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/destyle.min.css">
+  <link rel="stylesheet" media="all" href="css/style.css">
+  <link rel="stylesheet" media="all" href="css/burger-menu.css">
+
+  <script src="js/burger-menu.js"></script>
+</head>
+
+
+<body>
+  <header class="header">
+      <div class="header__title">Cresta</div>
+      <span class="spacer"></span>
+      <nav class="header__nav ">
+        <button class="burger-menu">
+          <div class="burger-menu__lines"></div>
+        </button>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="top-img">
+    <h1><span>Cresta Design.</span></h1>
+  </div>
+
+  <section id="about">
+    <h1>About</h1>
+    <h2>ミニマルで<br>洗練されたデザインを。</h2>
+    <p>近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+  </section>
+
+  <section id="service">
+    <h1>Service</h1>
+    <div class="content">
+      <img class="content__img" src="img/service-image@2x.jpg">
+      <div class="content__text">
+        <h2>リリース時のサポートで<br>サービスのブランディングを</h2>
+        <p>弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__text">
+        <h2>リリース後のサポートで<br>効果を最大化させる</h2>
+        <p>弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+      </div>
+      <img class="content__img" src="img/service-image02@2x.jpg">
+    </div>
+  </section>
+
+  <section id="news">
+    <h1>News</h1>
+    <div class="container">
+      <div class="card">
+        <img src="img/card-image1@2x.jpg" alt="">
+        <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+      </div>
+      <div class="card">
+        <img src="img/card-image2@2x.jpg" alt="">
+        <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+      </div>
+      <div class="card">
+        <img src="img/card-image3@2x.jpg" alt="">
+        <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1>お問い合わせ</h1>
+    <form action="">
+      <label for="your-name">担当者名</label>
+      <input type="text" name="your-name">
+      <label for="tel">電話番号</label>
+      <input type="text" name="tel">
+      <label for="tel">メールアドレス</label>
+      <input type="email" name="email">
+      <label for="content">お問い合わせ内容</label>
+      <textarea name="content" cols="30" rows="10"></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>©︎crest.design all rights reserved</p>
+  </footer>
+
+</body>
+</html>
