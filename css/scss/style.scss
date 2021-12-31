@@ -1,13 +1,17 @@
 @import "variables";
 @import "media-query";
+$text-color: #141414;
 
+/*****************************************************/
+/*  Base
+/*****************************************************/
 body {
     font-family: "Avenir", "Helvetica Neue", "Helvetica", "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック", "Yu Gothic", "ＭＳ Ｐゴシック", sans-serif;
     font-size: .9em;
 
     line-height: 2em;
 
-    color: $color-text-main;
+    color: $color-white;
 }
 
 .spacer {
@@ -15,7 +19,9 @@ body {
 }
 
 
-// ヘッダー
+/*****************************************************/
+/*  Header
+/*****************************************************/
 .header {
     display: flex;
     align-items: center;
@@ -24,7 +30,7 @@ body {
     height: 74px;
     margin-bottom: 1px;
 
-    background-color: $color-bg-main;
+    background-color: $color-black;
 
     &__title {
         font-size: 2em;
@@ -36,7 +42,7 @@ body {
     }
 
     // ヘッダーメニュー
-    &__nav {
+    &__menu {
         @include mq-up(md) {
             height: 100%;
             margin-right: $header-side-margin;
@@ -103,10 +109,11 @@ body {
             }
 
             ul {
-                position: absolute;
-                z-index: 1;
+                position: fixed;
+                z-index: 51;
                 top: 0;
                 right: 0;
+                bottom: 0;
                 left: 0;
 
                 display: flex;
@@ -116,16 +123,16 @@ body {
 
                 transition: .3s;
 
-                border-bottom: solid 1px $color-text-main;
-                background-color: $color-bg-main;
+                border-bottom: solid 1px $color-white;
+                background-color: $text-color;
 
                 li {
                     font-size: 1.5em;
 
+                    display: flex;
+                    flex-direction: column;
                     flex-grow: 1;
-
-                    height: 80px;
-                    line-height: 80px;
+                    justify-content: center;
 
                     transition: .3s;
 
@@ -141,7 +148,10 @@ body {
     }
 }
 
-.top-img {
+/*****************************************************/
+/*  First View
+/*****************************************************/
+.fv {
     width: 100%;
     margin: auto;
     padding-top: 200px;
@@ -166,16 +176,18 @@ body {
 
             letter-spacing: 3px;
 
-            border: 1.5px solid $color-text-main;
+            border: 1.5px solid $color-white;
         }
     }
 }
 
-$color-text-section: #141414;
+/*****************************************************/
+/*  Section Base
+/*****************************************************/
 section {
     margin: 80px;
 
-    color: $color-text-section;
+    color: $text-color;
 
     @include mq-down(md) {
         margin-right: 20px;
@@ -200,7 +212,9 @@ section {
     }
 }
 
-// サービス
+/*****************************************************/
+/*  Service
+/*****************************************************/
 #service {
     .content {
         display: flex;
@@ -229,6 +243,7 @@ section {
 
             @include mq-down(md) {
                 width: 100%;
+                max-width: 500px;
             }
         }
         &__text {
@@ -237,7 +252,9 @@ section {
     }
 }
 
-// ニュース
+/*****************************************************/
+/*  News
+/*****************************************************/
 #news {
     .container {
         display: flex;
@@ -263,6 +280,13 @@ section {
 
             box-shadow: 0 0 3px black;
 
+            @include mq-down(md) {
+                width: 100%;
+                max-width: 340px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
             img {
                 width: 100%;
             }
@@ -274,7 +298,9 @@ section {
     }
 }
 
-// お問い合わせフォーム
+/*****************************************************/
+/*  Contact
+/*****************************************************/
 #contact {
     margin-top: 120px;
     margin-bottom: 0;
@@ -318,7 +344,7 @@ section {
 
             color: white;
             border-radius: 25px;
-            background-color: $color-bg-main;
+            background-color: $color-black;
             box-shadow: 0 0 3px black;
 
             &:hover {
@@ -331,11 +357,13 @@ section {
     }
 }
 
-// フッター
+/*****************************************************/
+/*  Footer
+/*****************************************************/
 footer {
     height: 79px;
 
-    background-color: $color-bg-main;
+    background-color: $color-black;
     p {
         line-height: 79px;
 
