@@ -1,11 +1,18 @@
-# クリスタWebデザインカンプ 初級編
+# クリスタLPデザインカンプ 初級編
+PENGIN LLC.様提供のXDデザインカンプのコーディング練習  
 
-PENGIN BLOG様（[https://crestadesign.org](https://crestadesign.org)）提供のデザインカンプの実装
+---
+## リンク
+https://opipi.sakura.ne.jp/portfolio/cresta01/
 
-### 参考ページ
-[【コーディング課題】XDからコーディングをしよう【初級編】](https://crestadesign.org/cording-first/)
+---
+## 参考リンク
+提供元サイト様： PEING BLOG https://crestadesign.org
 
-# 使用したフレームワーク等
-- Sass（SCSS）
+[【コーディング課題】XDからコーディングをしよう【中級編】](https://crestadesign.org/cording-first/)
+
+---
+## 使用したフレームワーク等
+- Sass
 - destyle.css
 - jQuery3.6.0
